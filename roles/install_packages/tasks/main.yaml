@@ -1,8 +1,8 @@
 ---
-- name:
+- name: Include Install Task
   include_tasks:
     file: install.yaml
-  apply:
-    become: true
-    become_user: "{{ user }}"
+    apply:
+      become: true
+      become_user: "{{ user }}"
   when: install == "yes"
