@@ -3,4 +3,4 @@
   hosts: my_servers
   tasks:
   - import_role:
-    name: install_packages
+      name: install_packages
