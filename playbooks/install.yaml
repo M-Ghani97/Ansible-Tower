@@ -1,9 +1,9 @@
 ---
 - name: "Install Packages"
-  hosts: my_server_group
+  hosts: my_servers
   gather_facts: false
   become: yes
-  become_user: ubuntu
+  user: ubuntu
 
   tasks:
     - name: Adding install_packages Role
