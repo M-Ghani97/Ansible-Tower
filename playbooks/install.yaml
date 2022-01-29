@@ -2,8 +2,7 @@
 - name: "Install Packages"
   hosts: my_server_group
   gather_facts: false
-  user: ubuntu
-  become: true
+  user: "{{ user }}"
 
   tasks:
     - name: Adding install_packages Role
