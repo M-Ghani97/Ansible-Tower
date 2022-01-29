@@ -1,3 +1,3 @@
 ---
-install: "no"
-package_name: tree
+install: "yes"
+package_name: "tree"
