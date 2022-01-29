@@ -1,4 +1,3 @@
 ---
 install: "yes"
 package_name: "tree"
-user: "ubuntu"
