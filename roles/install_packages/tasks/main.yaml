@@ -1,0 +1,5 @@
+---
+- name:
+  include_tasks:
+    file: install.yaml
+  when: (install == yes) and (reomve == no)

@@ -1,0 +1,5 @@
+---
+- name: "install {{ package_name }} package"
+  apt:
+    name: "{{ package_name }}"
+    update_cache: yes
