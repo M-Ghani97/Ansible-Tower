@@ -1,4 +1,3 @@
 ---
-install: yes
-remove: no
+install: "no"
 package_name: tree

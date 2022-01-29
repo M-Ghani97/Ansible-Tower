@@ -1,6 +1,13 @@
 ---
 - name: "Install Packages"
   hosts: my_servers
+  gather_facts: false
+  user: ubuntu
+  become: true
+
   tasks:
-  - import_role:
-      name: install_packages
+    - name: Adding install_packages Role
+      include_role:
+        name: ../roles/install_packages
+      vars:
+        install: "yes"
