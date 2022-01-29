@@ -1,6 +1,6 @@
 ---
 - name: "Install Packages"
-  hosts: my_servers
+  hosts: my_server_group
   gather_facts: false
   user: ubuntu
   become: true
