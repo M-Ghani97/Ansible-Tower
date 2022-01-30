@@ -1,0 +1,7 @@
+---
+- name: Include Remove Task
+  include_tasks:
+    file: remove.yaml
+    apply:
+      become: true
+  when: remove == "yes"
