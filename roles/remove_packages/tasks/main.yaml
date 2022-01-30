@@ -4,4 +4,5 @@
     file: remove.yaml
     apply:
       become: true
+    tags: remove
   when: remove == "yes"

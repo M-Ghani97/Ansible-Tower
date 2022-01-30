@@ -3,10 +3,11 @@
   hosts: all
   gather_facts: false
   user: ubuntu
+  # vars_files:
+  #   - ./actions.yaml
 
   tasks:
-    - name: Adding install_packages Role
-      include_role:
-        name: ../roles/install_packages
-      vars:
-        install: "no"
+  - name: Adding install_packages Role
+    import_role:
+      name: ../roles/install_packages
+    tags: "install"
